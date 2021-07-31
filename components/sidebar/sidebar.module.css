@@ -1,0 +1,172 @@
+.container {
+	margin-bottom: 15px;
+}
+
+.head {
+	margin-bottom: 15px;
+	height: 30px;
+}
+
+.head h3 {
+	font-size: 15px;
+}
+
+.head div {
+	width: 20px;
+	height: 15px;
+}
+
+.head div span {
+	height: 1px;
+	border-radius: 1px;
+}
+
+.body {
+	height: 200px;
+}
+
+.form {
+	margin: 15px;
+	width: calc(100% - 30px);
+}
+
+.form input {
+	padding: 0 5px;
+	border: none;
+	outline: none;
+}
+
+.form input[type='button'] {
+	margin-left: 15px;
+	width: 30%;
+}
+
+.list {
+	padding: 0 15px;
+	overflow-y: scroll;
+}
+
+.list a {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.form input,
+.list p,
+.list a {
+	font-size: 12px;
+}
+
+.form input,
+.list a {
+	line-height: 2;
+}
+
+/* OPEN */
+.open .head div {
+	justify-content: center;
+}
+
+.open .head div span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.open .head div span:nth-child(2) {
+	opacity: 0;
+}
+
+.open .head div span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+}
+
+.open .body {
+	display: flex;
+}
+
+@media (min-width: 576px) {
+	.form input,
+	.list p,
+	.list a {
+		font-size: 15px;
+	}
+
+	.head {
+		height: 35px;
+	}
+
+	.head h3 {
+		font-size: 17.5px;
+	}
+
+	.head div {
+		width: 25px;
+		height: 17.5px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		min-width: 350px;
+		margin-right: 15px;
+	}
+
+	.body {
+		display: flex;
+		height: 350px;
+	}
+
+	.head {
+		margin-top: 15px;
+		margin-bottom: 0;
+		height: auto;
+	}
+
+	.head h3 {
+		font-size: 35px;
+	}
+
+	.head div {
+		display: none;
+	}
+
+	.list {
+		padding: 0;
+	}
+
+	.form {
+		width: 100%;
+		margin: 15px 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		min-width: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		min-width: 450px;
+	}
+
+	.form input,
+	.list p,
+	.list a {
+		font-size: 18px;
+	}
+
+	.body {
+		height: 420px;
+	}
+
+	.head h3 {
+		font-size: 40px;
+	}
+}

@@ -1,0 +1,161 @@
+*,
+*:before,
+*:after {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'BPG Nino Mkhedruli', sans-serif;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	width: 100%;
+	padding-top: 45px;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	main {
+		padding-top: 55px;
+	}
+
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	main {
+		padding-top: 60px;
+	}
+
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+	main {
+		padding-top: 65px;
+	}
+
+	.container {
+		max-width: 1320px;
+	}
+}
+
+/* GLOBAL PROPERTIES */
+/* SIZES */
+.w-100 {
+	width: 100%;
+}
+.h-100 {
+	height: 100%;
+}
+/* DISPLAY */
+.d-f {
+	display: flex;
+}
+
+.d-n {
+	display: none;
+}
+
+.d-b {
+	display: block;
+}
+
+.d-f-cc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.d-f-bc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.d-f-ac {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.fd-c {
+	flex-direction: column;
+}
+
+.ai-fs {
+	align-items: flex-start;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.jc-fs {
+	justify-content: flex-start;
+}
+
+/* POSITION */
+.p-r {
+	position: relative;
+}
+
+.p-a {
+	position: absolute;
+}
+
+/* FONT */
+.fw-l {
+	font-weight: lighter;
+}
+.fw-b {
+	font-weight: bold;
+}
+/* TEXT */
+.ta-c {
+	text-align: center;
+}
+
+/* OVERFLOW */
+.o-h {
+	overflow: hidden;
+}
+
+/* BORDER-RADIUS */
+.rounded {
+	border-radius: 15px;
+}

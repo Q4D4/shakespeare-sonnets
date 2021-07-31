@@ -1,0 +1,38 @@
+.container {
+	width: 30px;
+	height: 50%;
+	position: relative;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.container div {
+	width: 11px;
+	height: 11px;
+	top: 2px;
+	bottom: 2px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+	.container {
+		width: 32.5px;
+		border-radius: 17.5px;
+	}
+	.container div {
+		width: 13.5px;
+		height: 13.5px;
+	}
+}
+@media (min-width: 1400px) {
+	.container {
+		width: 35px;
+		border-radius: 20px;
+	}
+
+	.container div {
+		width: 16px;
+		height: 16px;
+	}
+}
