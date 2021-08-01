@@ -3,6 +3,8 @@ import { getSonnetsIds, getSonnet, getSortedSonnets } from '../../lib/sonnets'
 import SideBar from '../../components/sidebar'
 import Pager from '../../components/pager'
 import Head from 'next/head'
+// Data
+import { SiteMetadataConfig } from '../../data'
 // Styles
 import styles from '../../styles/pages/sonnet.module.css'
 
@@ -22,7 +24,16 @@ export default function Sonnet({ currentLang, langSwitch, allSonnets, sonnetData
 	return (
 		<div className={`container d-f jc-fs ${styles.container}`}>
 			<Head>
-				<title>{sonnetData.title}</title>
+				<title>{`სონეტი ${id} - ${SiteMetadataConfig.ge_title}`}</title>
+				<meta
+					property='og:title'
+					content={`სონეტი ${id} - ${SiteMetadataConfig.ge_og_title}`}
+				/>
+				<meta
+					property='og:description'
+					content={`${sonnetData.title} ${SiteMetadataConfig.ge_og_description}`}
+				/>
+				<meta property='og:url' content={`/ge/${id}`} />
 			</Head>
 
 			<SideBar

@@ -11,10 +11,10 @@ function Header(props) {
 	const { id } = router.query
 
 	return (
-		<header className={styles.container}>
-			<div className='container'>
+		<header className={`w-100 p-f ${styles.container}`}>
+			<div className='container d-f-bc'>
 				<div className={styles.logo}>{LogoIcon}</div>
-				<div className={styles.settings}>
+				<div className={`d-f-bc ${styles.settings}`}>
 					<Switch switch={props.switch} />
 
 					<Link href={props.currentLang === 'en' ? `/ge/${id}` : `/en/${id}`}>

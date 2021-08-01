@@ -6,6 +6,7 @@ export const LangIcons = {
 			viewBox='0 0 18 18'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
+			className='w-100 h-100'
 		>
 			<path
 				d='M9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18Z'
@@ -40,6 +41,7 @@ export const LangIcons = {
 			viewBox='0 0 18 18'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
+			className='w-100 h-100'
 		>
 			<path
 				d='M9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18Z'
@@ -108,6 +110,7 @@ export const LogoIcon = (
 		viewBox='0 0 140 70'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
+		className='w-100 h-100'
 	>
 		<g clipPath='url(#clip0)'>
 			<path
@@ -139,3 +142,16 @@ export const LogoIcon = (
 		</defs>
 	</svg>
 )
+
+export const SiteMetadataConfig = {
+	title: 'William Shakespeare',
+	ge_title: 'უილიამ შექსპირი',
+	og_title: 'Shakespeare',
+	ge_og_title: 'შექსპირი',
+	description:
+		"Shakespeare wrote 154 sonnets published in his 'quarto' in 1609, covering themes such as the passage of time, mortality, love, beauty, infidelity, and jealousy. Translated into Georgian by Rezo Tabukashvili. შექსპირმა დაწერა 154 სონეტი, გამოქვეყნდა 1609 წელს. ეხება თემებს, როგორიცაა: დროის ცვლა, გარდაცვალება, სიყვარული, მშვენიერება, ღალატი და ეჭვიანობა. ინგლისურიდან თარგმნა რეზო თაბუკაშვილმა.",
+	og_description: '- Shakespeare',
+	ge_og_description: '- შექსპირი',
+	keywords:
+		'William Shakespeare Sonnets Rezo Tabukashvili Poetry Dramatist Hamlet Poem Romeo Juliet King Lear უილიამ შექსპირი სონეტები რეზო თაბუკაშვილი პოეზია დრამატურგი ჰამლეტი ლექსი რომეო ჯულიეტა მეფე ლირი',
+}

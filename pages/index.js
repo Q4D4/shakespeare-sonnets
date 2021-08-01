@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 function HomePage() {
 	const router = useRouter()
@@ -11,7 +12,11 @@ function HomePage() {
 			router.push('/en/1')
 		}
 	}, [])
-	return <></>
+	return (
+		<Head>
+			<meta name='robots' content='noindex, nofollow' />
+		</Head>
+	)
 }
 
 export default HomePage
