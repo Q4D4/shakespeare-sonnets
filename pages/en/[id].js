@@ -34,6 +34,7 @@ export default function Sonnet({ currentLang, langSwitch, allSonnets, sonnetData
 					content={`${sonnetData.title} ${SiteMetadataConfig.og_description}`}
 				/>
 				<meta property='og:url' content={`/en/${id}`} />
+				<meta name='robots' content='index, follow' />
 			</Head>
 
 			<SideBar
