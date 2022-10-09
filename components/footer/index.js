@@ -12,7 +12,7 @@ function Footer({ text }) {
 						className='fw-b'
 						rel='noopener noreferrer'
 						target='_blank'
-						href='https://davidkadaria.me'
+						href='https://www.qada.ge'
 					>
 						QADA
 					</a>
